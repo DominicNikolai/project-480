@@ -60,7 +60,6 @@
   }
   geometry.setAttribute('position', new Float32BufferAttribute(positions, 3));
   geometry.setAttribute('color', new Float32BufferAttribute(colors, 3));
-
   const material = new PointsMaterial({
     size: PARTICLE_SIZE,
     vertexColors: true,
@@ -69,7 +68,6 @@
     transparent: true,
     opacity: 0.8
   });
-
   const particles = new Points(geometry, material);
   scene.add(particles);
 
